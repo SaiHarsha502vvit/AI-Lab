@@ -1,0 +1,27 @@
+Completed :
+    BFS  ✅
+    Towers of Hanoi  ✅
+    Water-Jug  
+    N-queens  
+    Travelling Sales men  
+
+Should Complete : 
+    DFS  
+    Missinories and Cannibals   UnderStood
+    tic-tac-toe   underStood
+    8-puzzle 
+
+
+
+All Programs are Correct
+
+
+        and              
+
+
+No Need To Worry ....... 
+
+
+
+
+    
