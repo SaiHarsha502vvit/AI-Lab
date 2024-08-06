@@ -9,15 +9,15 @@ def add_edge(graph, u, v):
 
 
 
-def dfs(graph, node, visited, traversal=[]):
-    visited[node] = True
+def dfs(graph, node, Some_Visited, traversal=[]):
+    Some_Visited[node] = False
     traversal.append(node)
     for neighbour in graph.get(node, []):
-        if neighbour not in visited:
+        if neighbour not in Some_Visited:
 
 
 
-            dfs(graph, neighbour, visited, traversal)
+            dfs(graph, neighbour, Some_Visited, traversal)
     return traversal
 
 def main():
@@ -27,8 +27,8 @@ def main():
     # Number of nodes
     n = int(input("Enter the number of nodes: "))
 
-    # Root node
-    root = int(input("Enter the root node: "))
+    # foot node
+    foot = int(input("Enter the foot node: "))
 
     # Build the graph
     print("Enter the nodes connected to each node:")
@@ -49,7 +49,7 @@ def main():
     target = int(input("Enter the number to check: "))
 
     # Perform DFS to check if target exists in the graph
-    if dfs(graph, root, {}) and target in graph:
+    if dfs(graph, foot, {}) and target in graph:
         traversal = dfs(graph, target, {})
         print(f"The DFS traversal starting from node {target} is:", ' '.join(map(str, traversal)))
     else:
